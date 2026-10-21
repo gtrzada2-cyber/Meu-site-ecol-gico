@@ -1,0 +1,160 @@
+
+<header class="hero">
+  <p class="tag">🌱 NOSSO FUTURO COMEÇA AGORA</p>
+  <h1>🌎 Planeta Sustentável</h1>
+  <p>Pequenas atitudes, grandes mudanças!</p>
+  <a class="botao" href="#ajudar">Faça sua parte</a>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#problemas">Problemas</a>
+  <a href="#reciclagem">Reciclagem</a>
+  <a href="#ajudar">Como ajudar</a>
+</nav>
+
+<main>
+  <section id="sobre">
+    <h2>🌿 Cuide do nosso planeta</h2>
+    <img
+      src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80"
+      alt="Floresta verde preservada">
+    <p>O meio ambiente é essencial para a vida.
+    Preservar a natureza significa proteger os animais,
+    as plantas, a água e o ar que respiramos.</p>
+  </section>
+
+  <section id="problemas">
+    <h2>🌍 Problemas ambientais</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>🌳 Desmatamento</h3>
+        <p>A destruição das florestas ameaça os animais
+        e prejudica o equilíbrio ambiental.</p>
+        </article>
+      <article class="card">
+        <h3>🏭 Poluição</h3>
+        <p>O lixo e as substâncias poluentes prejudicam
+        os rios, o solo, o ar e os seres vivos.</p>
+      </article>
+      <article class="card">
+        <h3>🌡️ Mudanças climáticas</h3>
+        <p>O aumento dos gases de efeito estufa
+        contribui para o aquecimento global.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="reciclagem">
+    <h2>♻️ Reciclagem</h2>
+    <img
+      src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=80"
+      alt="Materiais separados para reciclagem">
+    <p>Separar os resíduos ajuda a economizar recursos
+    naturais e diminuir a quantidade de lixo.</p>
+    <ul>
+      <li>Papel: caixas e folhas limpas.</li>
+      <li>Plástico: garrafas e embalagens.</li>
+      <li>Vidro: garrafas e potes aceitos pela coleta.</li>
+      <li>Metal: latas e embalagens metálicas.</li>
+    </ul>
+    <p>Confira as regras da coleta seletiva da sua cidade.</p>
+  </section>
+  <section id="agua">
+    <h2>💧 Economize água</h2>
+    <img
+      src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=1000&q=80"
+      alt="Água limpa na natureza">
+    <ul>
+      <li>Feche a torneira ao escovar os dentes.</li>
+      <li>Tome banhos sem desperdício.</li>
+      <li>Conserte vazamentos.</li>
+      <li>Reutilize água quando for seguro.</li>
+    </ul>
+  </section>
+
+  <section id="ajudar"><h2>💚 Faça sua parte!</h2>
+    <p>Escolha uma atitude sustentável para praticar hoje.</p>
+
+    <label for="acao">Minha atitude de hoje:</label>
+    <select id="acao">
+      <option value="reciclar">Separar o lixo reciclável</option>
+      <option value="agua">Economizar água</option>
+      <option value="energia">Economizar energia</option>
+      <option value="natureza">Cuidar de uma planta</option>
+      <option value="lixo">Não jogar lixo na rua</option>
+    </select>
+
+    <button onclick="mostrarCompromisso()">
+      Assumir compromisso 🌱
+    </button>
+
+    <p id="mensagem" aria-live="polite"></p>
+  </section>
+</main><section id="quiz">
+  <h2>🧠 Quiz ambiental</h2>
+  <p id="pergunta">Qual atitude ajuda a economizar água?</p>
+
+  <div id="opcoes">
+    <button onclick="responder(0)">Deixar a torneira aberta</button>
+    <button onclick="responder(1)">Fechar a torneira ao escovar os dentes</button>
+    <button onclick="responder(2)">Tomar banhos mais longos</button>
+  </div>
+
+  <p id="resultado" aria-live="polite"></p>
+  <p>Pontos: <span id="pontos">0</span></p>
+  <button onclick="proximaPergunta()">Próxima pergunta</button>
+</section><section id="missoes">
+  <h2>🌱 Missões ecológicas</h2>
+  <p>Complete desafios e ajude a proteger o planeta!</p>
+
+  <div class="progresso">
+    <p>Seu progresso: <span id="total-missoes">0/5</span></p>
+    <div class="barra">
+      <div id="barra-progresso"></div>
+    </div>
+  </div>
+
+  <div id="lista-missoes">
+    <label class="missao">
+      <input type="checkbox" data-pontos="10">
+      <span>💧 Economizar água hoje <b>+10 pontos</b></span>
+    </label>
+
+    <label class="missao">
+      <input type="checkbox" data-pontos="10">
+      <span>♻️ Separar o lixo reciclável <b>+10 pontos</b></span>
+    </label><label class="missao">
+      <input type="checkbox" data-pontos="15">
+      <span>💡 Apagar luzes desnecessárias <b>+15 pontos</b></span>
+    </label>
+
+    <label class="missao">
+      <input type="checkbox" data-pontos="15">
+      <span>🌳 Aprender algo sobre uma árvore nativa <b>+15 pontos</b></span>
+    </label>
+
+    <label class="missao">
+      <input type="checkbox" data-pontos="20">
+      <span>🚯 Recolher lixo com segurança ou participar de uma ação de limpeza supervisionada <b>+20 pontos</b></span>
+    </label>
+  </div>
+
+  <div class="painel-pontos">
+    <p>⭐ Seus pontos</p>
+    <strong id="pontos-missoes">0</strong>
+    <p id="nivel-missoes">🌱 Explorador da natureza</p>
+  </div><p id="mensagem-missoes" aria-live="polite">
+    Escolha uma missão para começar!
+  </p>
+
+  <button id="reiniciar-missoes" type="button">
+    🔄 Reiniciar missões
+  </button>
+</section>
+
+<footer>
+  <h2>🌎 Planeta Sustentável</h2>
+  <p>Proteger a natureza é cuidar da vida.</p>
+  <p>Projeto educativo sobre meio ambiente · 2026</p>
+</footer>
